@@ -1,0 +1,52 @@
+/* stijl.css - labo 3, donut (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+  --kleur-cirkel: thistle;
+  --kleur-vlak: orange;
+  --rand: 6px solid black;
+}  
+
+/* === your rules === */
+
+
+h1 {
+  width: 80%;
+  height: 80%;
+  background-color: var(--kleur-vlak);
+  border-right: var(--rand);
+  border-bottom: var(--rand);
+
+  /* tekst in het midden van het gele vlak */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+body{
+  padding-left: 25rem;
+  padding-right: 25rem; 
+  padding-top: 5rem;
+}
+main{
+  background-color: tomato;
+  padding-bottom: 20rem;
+  padding-top: 20rem;
+  border: 10px solid black;
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main div {
+  width: 15rem;
+  height: 15rem;
+  background-color: var(--kleur-cirkel);
+  border: var(--rand);
+  border-radius: 50%;
+  overflow: hidden;   /*opgezocht met ai want ik vond het niet/*
+}
+
